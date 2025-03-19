@@ -8,11 +8,11 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvTitulo"
+        android:id="@+id/tvPrecoPergunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:text="Calculadora de gasto de combustível"
+        android:text="Preço do Combustível"
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold"
@@ -22,18 +22,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
 
-
+    <EditText
+        android:id="@+id/etPreco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@android:color/white"
+        android:hint=" Digite o preço do combustível (€/L) "
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPrecoPergunta" />
 
     <Button
-        android:id="@+id/btniniciar"
+        android:id="@+id/btnProximo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:backgroundTint="@android:color/white"
-        android:text="Iniciar"
+        android:text="Próximo"
         android:textColor="#3DDC84"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+        app:layout_constraintTop_toBottomOf="@id/etPreco" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

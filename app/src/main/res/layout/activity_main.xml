@@ -15,12 +15,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imagmain"
-        android:layout_width="522dp"
-        android:layout_height="212dp"
-        android:src="@drawable/ic_fuel6"
+        android:id="@+id/imgTitulo"
+        android:layout_width="0dp"
+        android:layout_height="181dp"
+        android:src="@drawable/ic_fuel2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

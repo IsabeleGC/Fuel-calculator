@@ -3,7 +3,6 @@ package com.example.fuelcalculator
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fuel_calculator.R
 
@@ -12,3 +11,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val btnIniciar = findViewById<Button>(R.id.btnIniciar)
+
+        // Ao clicar no botão, vai para a tela de Preço
+        btnIniciar.setOnClickListener {
+            val intent = Intent(this, PrecoActivity::class.java)
+            startActivity(intent)
+        }
+    }
+}
+
+class PrecoActivity {
+
+}

@@ -7,7 +7,7 @@
     android:background="#3DDC84"
     tools:context=".MainActivity">
 
-    <!-- Fundo branco para a imagem -->
+
     <View
         android:id="@+id/fundoImagem"
         android:layout_width="match_parent"
@@ -15,13 +15,23 @@
         android:background="@android:color/white"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imgConsumo"
+        android:layout_width="0dp"
+        android:layout_height="181dp"
+        android:src="@drawable/ic_fuel2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvPerguntaConsumo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="32dp"
         android:text="Consumo do Carro (km/L)"
         android:textColor="@android:color/white"
-        android:layout_margin="32dp"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

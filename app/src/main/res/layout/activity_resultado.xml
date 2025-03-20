@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,93 +9,95 @@
     android:background="#3DDC84"
     tools:context=".ResultadosActivity">
 
-    <!-- Fundo branco para a imagem -->
-    <View
+
+
+        <View
         android:id="@+id/fundoImagem"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:background="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <!-- Texto do resultado grande -->
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgResultado"
-        android:layout_width="412dp"
-        android:layout_height="203dp"
-        android:src="@drawable/ic_fuel"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-23dp" />
+        android:layout_width="393dp"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_fuel2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/fundoImagem"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="€100.00"
+        android:textColor="@android:color/white"
         android:textSize="33sp"
         android:textStyle="bold"
-        android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/fundoImagem"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintMarginTop="20dp"/>
+        app:layout_constraintMarginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fundoImagem" />
 
-    <!-- Revisão dos dados inseridos -->
+
     <TextView
         android:id="@+id/tvRevisao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Revisão dos dados inseridos"
-        android:textSize="16sp"
         android:textColor="@android:color/white"
+        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/tvResultado"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintMarginTop="10dp"/>
+        app:layout_constraintMarginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResultado" />
 
-    <!-- Layout para organizar os valores em cada ponta -->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvRevisao"
-        app:layout_constraintStart_toStartOf="parent"
+        android:paddingHorizontal="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintMarginTop="16dp"
-        android:paddingHorizontal="32dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRevisao">
 
-        <!-- Preço -->
+
         <TextView
             android:id="@+id/tvPreco"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Preço:"
-            android:textSize="18sp"
             android:textColor="@android:color/white"
-            app:layout_constraintStart_toStartOf="parent"/>
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvPrecoValor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="€1.50"
-            android:textSize="18sp"
             android:textColor="@android:color/white"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Consumo -->
+
         <TextView
             android:id="@+id/tvConsumo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Consumo:"
-            android:textSize="18sp"
             android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintMarginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvPreco"
-            app:layout_constraintMarginTop="10dp"/>
+            app:layout_constraintTop_toBottomOf="@id/tvPreco" />
 
-        <!-- KM -->
+
         <TextView
             android:id="@+id/tvConsumoValor"
             android:layout_width="wrap_content"
@@ -110,25 +114,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Distância:"
-            android:textSize="18sp"
             android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintMarginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvConsumo"
-            app:layout_constraintMarginTop="10dp"/>
+            app:layout_constraintTop_toBottomOf="@id/tvConsumo" />
 
         <TextView
             android:id="@+id/tvKmValor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="200 km"
-            android:textSize="18sp"
             android:textColor="@android:color/white"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvConsumoValor"
-            app:layout_constraintMarginTop="10dp"/>
+            app:layout_constraintMarginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tvConsumoValor" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Botão para novo cálculo -->
+
     <Button
         android:id="@+id/btnNovoCalculo"
         android:layout_width="0dp"
@@ -138,6 +142,7 @@
         android:text="Novo Cálculo"
         android:textColor="#3DDC84"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

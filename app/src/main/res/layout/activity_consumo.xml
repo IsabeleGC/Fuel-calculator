@@ -7,6 +7,14 @@
     android:background="#3DDC84"
     tools:context=".MainActivity">
 
+    <!-- Fundo branco para a imagem -->
+    <View
+        android:id="@+id/fundoImagem"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvPerguntaConsumo"
         android:layout_width="wrap_content"
@@ -26,12 +34,12 @@
         android:id="@+id/etConsumo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
         android:layout_margin="32dp"
+        android:background="@android:color/white"
         android:hint=" Digite o consumo do carro"
         android:inputType="numberDecimal"
-        android:padding="12dp"
         android:minHeight="48dp"
+        android:padding="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvPerguntaConsumo" />
@@ -44,8 +52,8 @@
         android:backgroundTint="@android:color/white"
         android:text="Próximo"
         android:textColor="#3DDC84"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etConsumo" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

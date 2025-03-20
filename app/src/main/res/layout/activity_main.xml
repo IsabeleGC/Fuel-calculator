@@ -7,6 +7,14 @@
     android:background="#3DDC84"
     tools:context=".MainActivity">
 
+    <!-- Fundo branco para a imagem -->
+    <View
+        android:id="@+id/fundoImagem"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"

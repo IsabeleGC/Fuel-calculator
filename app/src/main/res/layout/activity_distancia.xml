@@ -7,6 +7,13 @@
     android:background="#3DDC84"
     tools:context=".MainActivity">
 
+    <!-- Fundo branco para a imagem -->
+    <View
+        android:id="@+id/fundoImagem"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/tvDistanciaPergunta"
         android:layout_width="wrap_content"
@@ -37,15 +44,15 @@
         app:layout_constraintTop_toBottomOf="@id/tvDistanciaPergunta" />
 
     <Button
-        android:id="@+id/btnResultado"
+        android:id="@+id/btnProximo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:backgroundTint="@android:color/white"
-        android:text="Resultado"
+        android:text="Próximo"
         android:textColor="#3DDC84"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etDistancia" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

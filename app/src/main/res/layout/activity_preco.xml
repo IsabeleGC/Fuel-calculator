@@ -2,28 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PrecoLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3DDC84"
-    tools:context=".MainActivity">
-
+    tools:context=".PrecoActivity">
 
     <View
         android:id="@+id/fundoImagem"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:background="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imgPreco"
-        android:layout_width="0dp"
-        android:layout_height="181dp"
-        android:src="@drawable/ic_fuel2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/tvPrecoPergunta"
@@ -34,11 +26,10 @@
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etPreco"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <EditText
         android:id="@+id/etPreco"
@@ -46,13 +37,15 @@
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:background="@android:color/white"
-        android:hint=" Digite o preço do combustível (€/L) "
+        android:hint="Digite o preço do combustível (€/L)"
         android:inputType="numberDecimal"
-        android:minHeight="48dp"
+        android:minHeight="55dp"
         android:padding="12dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnProximo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPrecoPergunta" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 
     <Button
         android:id="@+id/btnProximo"
@@ -62,8 +55,8 @@
         android:backgroundTint="@android:color/white"
         android:text="Próximo"
         android:textColor="#3DDC84"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

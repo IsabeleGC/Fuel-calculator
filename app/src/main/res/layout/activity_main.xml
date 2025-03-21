@@ -7,38 +7,34 @@
     android:background="#3DDC84"
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/fundoEntrada"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgTitulo"
-        android:layout_width="0dp"
-        android:layout_height="181dp"
-        android:src="@drawable/ic_fuel2"
+        android:layout_width="408dp"
+        android:layout_height="261dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_fuel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/tvTitulo"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:text="Calculadora de gasto de combustível"
+        android:layout_marginTop="92dp"
+        android:text="Calculadora de Gasto de Combustível"
+        android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imgTitulo"
+        app:layout_constraintWidth_percent="0.8" />
 
     <Button
         android:id="@+id/btnIniciar"
@@ -50,6 +46,7 @@
         android:textColor="#3DDC84"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+        app:layout_constraintWidth_percent="0.8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

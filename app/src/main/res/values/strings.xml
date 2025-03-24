@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Fuel-calculator</string>
-</resources>
+    <string name="app_name">FuelCalculator</string>
+    <string name="fuel_image_description">Imagem de um galão de combustível.</string>
+    <string name="calculator_title">Calculadora de gasto de Combustível</string>
+    <string name="calculator_subtitle">Não tem idéia de quanto vai gastar de combustível? Então está no lugar certo!</string>
+
+    <string name="start_button">Iniciar</string>
+   </resources>

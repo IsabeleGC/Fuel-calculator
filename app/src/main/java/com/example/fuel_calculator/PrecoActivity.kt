@@ -10,6 +10,7 @@ class PrecoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_preco)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         val etPreco = findViewById<EditText>(R.id.etPreco)
         val btnProximo = findViewById<Button>(R.id.btnProximo)

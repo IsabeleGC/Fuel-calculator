@@ -4,49 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3DDC84"
+    android:background="#1E3A8A"
     tools:context=".MainActivity">
-
 
     <ImageView
         android:id="@+id/imgTitulo"
-        android:layout_width="408dp"
-        android:layout_height="261dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/fuel_image_description"
         android:src="@drawable/ic_fuel"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:layout_marginTop="92dp"
-        android:text="Calculadora de Gasto de Combustível"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/calculator_title"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="22sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgTitulo"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.85" />
 
-    <Button
-        android:id="@+id/btnIniciar"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/tvSubTitulo"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:backgroundTint="@android:color/white"
-        android:text="Iniciar"
-        android:textColor="#3DDC84"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/calculator_subtitle"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.85" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/start_button"
+        android:textColor="#1E3A8A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubTitulo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

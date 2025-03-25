@@ -66,14 +66,15 @@
 
     <Button
         android:id="@+id/btnIniciar"
-        android:layout_width="320dp"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:background="@drawable/rounded_button"
         android:text="@string/start_button"
         android:textColor="#1E3A8A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8" />/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

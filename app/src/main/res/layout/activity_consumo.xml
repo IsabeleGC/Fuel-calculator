@@ -1,60 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
- <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ConsumoLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3DDC84"
+    android:background="#1E3A8A"
     tools:context=".MainActivity">
 
 
-    <View
-        android:id="@+id/fundoImagem"
+    <LinearLayout
+        android:id="@+id/rounded_image"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="@android:color/white"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="312dp"
+        android:background="@drawable/rounded_image"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">>
+
+        <ImageView
+            android:id="@+id/imgConsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="54dp"
+            android:src="@drawable/ic_fuel_consumo" />
+    </LinearLayout>
 
 
     <TextView
         android:id="@+id/tvPerguntaConsumo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
         android:text="Consumo do Carro (km/L)"
+        android:layout_margin="24dp"
+        android:layout_marginStart="16dp"
         android:textColor="@android:color/white"
-        android:textSize="22sp"
+        android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/etConsumo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/rounded_image"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Passo 2 de 3"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPerguntaConsumo" />
 
     <EditText
         android:id="@+id/etConsumo"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:background="@android:color/white"
         android:hint=" Digite o consumo do carro"
+        android:layout_margin="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/white"
         android:inputType="numberDecimal"
-        android:minHeight="48dp"
+        android:minHeight="55dp"
         android:padding="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnProximo"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/btnProximo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:backgroundTint="@android:color/white"
-        android:text="Próximo"
-        android:textColor="#3DDC84"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/next_button"
+        android:textColor="#1E3A8A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8" /> />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,4 +6,12 @@
     <string name="start_button">Iniciar</string>
     <string name="fuel_imageprice">Imagem de uma bomba de combustivel.</string>
     <string name="next_button">Próximo</string>
+    <string name="preco_combustivel">Preço do Combustível</string>
+    <string name="Distancia">Valor da distancia</string>
+     <string name="revisao_dados">Revisão dos dados inseridos</string>
+    <string name="preco">Preço:</string>
+    <string name="consumo">Consumo:</string>
+    <string name="distancia">Distância:</string>
+    <string name="new_button">Novo Cálculo</string>
+    <string name= "gasto_total">Gasto Total: %s</string>
 </resources>

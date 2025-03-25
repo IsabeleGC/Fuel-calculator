@@ -7,23 +7,36 @@
     android:background="#1E3A8A"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/rounded_image"
+        android:background="@drawable/rounded_image"
+        android:layout_width="match_parent"
+        android:layout_height="312dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
     <ImageView
         android:id="@+id/imgTitulo"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/fuel_image_description"
         android:src="@drawable/ic_fuel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginTop="16sp"
         android:text="@string/calculator_title"
         android:textAlignment="center"
         android:textColor="@android:color/white"
@@ -31,7 +44,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/rounded_image"
         app:layout_constraintWidth_percent="0.85" />
 
     <TextView
@@ -61,7 +74,6 @@
         android:textColor="#1E3A8A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSubTitulo" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

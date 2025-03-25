@@ -9,10 +9,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-            // Captura o botão pelo ID
+
         val btnIniciar = findViewById<Button>(R.id.btnIniciar)
 
-        // Evento de clique para abrir a tela de Preço
+
         btnIniciar.setOnClickListener {
             val intent = Intent(this, PrecoActivity::class.java)
             startActivity(intent)

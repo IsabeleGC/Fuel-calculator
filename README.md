@@ -25,8 +25,9 @@ Fuel Calculator é um aplicativo Android desenvolvido para ajudar motoristas a c
 ## 📷 Screenshots
 
  ## Tela Inicial # Inserir Preço ##Inserir Consumo ##Inserir Distância ## Resultado Final
-<img src="https://github.com/user-attachments/assets/d4249799-1a13-49ca-8918-2a3c07bdb9a5" width = 260/> <img src="https://github.com/user-attachments/assets/4e123585-016f-4675-b657-706bf75e35ac" width = 260/> <img src="https://github.com/user-attachments/assets/fb82095a-2f29-4549-b20e-c87dd81bd8c5" width = 260/> <img src="https://github.com/user-attachments/assets/4aecde1f-b258-4f22-807d-ad1b987ecf0c" width = 260/> 
+<img src="https://github.com/user-attachments/assets/d4249799-1a13-49ca-8918-2a3c07bdb9a5" width = 260/> <img src="https://github.com/user-attachments/assets/66c209da-4dd1-44df-9f1c-6c070c96f196" width = 260/> <img src="https://github.com/user-attachments/assets/fb82095a-2f29-4549-b20e-c87dd81bd8c5" width = 260/> <img src="https://github.com/user-attachments/assets/4aecde1f-b258-4f22-807d-ad1b987ecf0c" width = 260/> 
 <img src="https://github.com/user-attachments/assets/03967046-cccf-4212-999f-de1d654ca14d" width = 260/> 
+
 
 ## 📌 Melhorias Futuras
 

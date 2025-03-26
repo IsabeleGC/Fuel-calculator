@@ -25,9 +25,9 @@
             android:id="@+id/tvResultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/dark_blue"
             android:layout_marginStart="95dp"
             android:layout_marginTop="90dp"
+            android:textColor="@color/dark_blue"
             android:textSize="48sp"
             android:textStyle="bold"
             tools:text="€100,00" />

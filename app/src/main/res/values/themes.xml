@@ -6,5 +6,5 @@
         <item name="colorOnPrimary">#FFFFFF</item>
         <item name="android:statusBarColor">#FFFFFF</item>
 
-         </style>
+    </style>
 </resources>

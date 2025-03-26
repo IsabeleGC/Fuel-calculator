@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/distanciaLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/distanciaLayout"
     android:background="#1E3A8A"
     tools:context=".MainActivity">
 
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">>
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imgTitulo"
@@ -26,6 +26,7 @@
             android:layout_height="231dp"
             android:layout_marginTop="54dp"
             android:src="@drawable/ic_fuel_distancia" />
+
     </LinearLayout>
 
 
@@ -33,9 +34,9 @@
         android:id="@+id/tvDistanciaPergunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Distância até o Destino"
         android:layout_margin="24dp"
         android:layout_marginStart="16dp"
+        android:text="Distância até o Destino"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -58,11 +59,11 @@
         android:id="@+id/etDistancia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint=" Digite a distância (km) "
         android:layout_margin="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:background="@android:color/white"
+        android:hint=" Digite a distância (km) "
         android:inputType="numberDecimal"
         android:minHeight="55dp"
         android:padding="12dp"
@@ -82,5 +83,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintWidth_percent="0.8" />/>
+        app:layout_constraintWidth_percent="0.8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
